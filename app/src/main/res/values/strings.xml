@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Firebase authentication</string>
+    <string name="get_started_text">Let\'s Have\n Some Fun</string>
+    <string name="forgot_password_msg">Don\'t worry! it happens. Please enter the email address associated with your account.</string>
+    <string name="on_submit_msg">Check out your mailbox, you will receive an email containing link where you can reset your password</string>
+    <string name="get_started">Get Started</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="login">&#032;Login</string>
+    <string name="email_id">Email ID</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">Name</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="or">--------------------- OR ---------------------</string>
+    <string name="submit">Submit</string>
+    <string name="please_enter_your_email_address">Please enter your email address</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="default_client_id">37508926932-tk9c5tl9js8jo38pjk270n1n265v88bh.apps.googleusercontent.com</string>
+</resources>

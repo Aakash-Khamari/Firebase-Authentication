@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation_graph"
+    app:startDestination="@id/splash_Screen_Fragment2">
+    <fragment
+        android:id="@+id/splash_Screen_Fragment2"
+        android:name="com.sovereign.firebaseauthentication.Splash_Screen_Fragment"
+        android:label="fragment_splash__screen_"
+        tools:layout="@layout/fragment_splash__screen_" >
+        <action
+            android:id="@+id/action_splash_Screen_Fragment2_to_getStartedFragment"
+            app:destination="@id/getStartedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getStartedFragment"
+        android:name="com.sovereign.firebaseauthentication.getStartedFragment"
+        android:label="fragment_get_started"
+        tools:layout="@layout/fragment_get_started" >
+        <action
+            android:id="@+id/action_getStartedFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_getStartedFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetpasswordFragment2"
+        android:name="com.sovereign.firebaseauthentication.ForgetpasswordFragment"
+        android:label="fragment_forgetpassword"
+        tools:layout="@layout/fragment_forgetpassword">
+        <action android:id="@+id/action_forgetpasswordFragment2_to_signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.sovereign.firebaseauthentication.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_forgetpasswordFragment2"
+            app:destination="@id/forgetpasswordFragment2" />
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.sovereign.firebaseauthentication.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sovereign.firebaseauthentication.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+</navigation>
